@@ -1,0 +1,8 @@
+<launch>
+    <node name="ros_pub" pkg="self_car_hw2" type="pub_key" output="screen"/>
+
+    <node name="serial_node" pkg="rosserial_python" type="serial_node.py" >
+        <param name="port" value="/dev/ttyACM0"/>
+    </node>
+
+</launch>
